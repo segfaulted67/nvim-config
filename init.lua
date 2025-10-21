@@ -15,7 +15,6 @@ vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
 
 vim.cmd("colorscheme carbonfox")
 vim.cmd("set nocursorline")
-vim.cmd("set mouse=")
 
 -- Basic settings
 vim.opt.number = true                              -- Line numbers
