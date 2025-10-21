@@ -15,12 +15,15 @@ vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
 
 vim.cmd("colorscheme carbonfox")
 vim.cmd("set nocursorline")
+vim.cmd("set mouse=")
 
 -- Basic settings
 vim.opt.number = true                              -- Line numbers
 vim.opt.wrap = false                               -- Don't wrap lines
 vim.opt.scrolloff = 5                              -- Keep 10 lines above/below cursor 
 vim.opt.sidescrolloff = 5                          -- Keep 8 columns left/right of cursor
+vim.opt.mouse = ""
+
 
 -- Indentation
 vim.opt.tabstop = 2                                -- Tab width
@@ -71,7 +74,6 @@ vim.opt.autochdir = false                          -- Don't auto change director
 vim.opt.iskeyword:append("-")                      -- Treat dash as part of word
 vim.opt.path:append("**")                          -- include subdirectories in search
 vim.opt.selection = "exclusive"                    -- Selection behavior
-vim.opt.mouse = "a"                                -- Enable mouse support
 vim.opt.clipboard:append("unnamedplus")            -- Use system clipboard
 vim.opt.modifiable = true                          -- Allow buffer modifications
 vim.opt.encoding = "UTF-8"                         -- Set encoding
