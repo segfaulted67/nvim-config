@@ -8,10 +8,10 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
-vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
-vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
-vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
-vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
+vim.keymap.set({'n', 'i'}, '<left>', '<cmd>echo "Use h to move!!"<CR>')
+vim.keymap.set({'n', 'i'}, '<right>', '<cmd>echo "Use l to move!!"<CR>')
+vim.keymap.set({'n', 'i'}, '<up>', '<cmd>echo "Use k to move!!"<CR>')
+vim.keymap.set({'n', 'i'}, '<down>', '<cmd>echo "Use j to move!!"<CR>')
 
 vim.cmd("colorscheme carbonfox")
 vim.cmd("set nocursorline")
@@ -21,7 +21,7 @@ vim.opt.number = true                              -- Line numbers
 vim.opt.wrap = false                               -- Don't wrap lines
 vim.opt.scrolloff = 5                              -- Keep 10 lines above/below cursor 
 vim.opt.sidescrolloff = 5                          -- Keep 8 columns left/right of cursor
-vim.opt.mouse = ""
+vim.opt.mouse = ""                                 -- Disable Mouse
 
 
 -- Indentation
