@@ -15,6 +15,8 @@ vim.keymap.set({'n', 'i'}, '<down>', '<cmd>echo "Use j to move!!"<CR>')
 
 vim.cmd("colorscheme carbonfox")
 vim.cmd("set nocursorline")
+-- uncomment it to remove transparancy 
+-- vim.cmd("hi Normal guibg=NONE")
 
 -- Basic settings
 vim.opt.number = true                              -- Line numbers
