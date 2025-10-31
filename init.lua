@@ -112,3 +112,13 @@ vim.keymap.set('n', '<leader><F5>', vim.cmd.UndotreeToggle)
 vim.keymap.set('n', '<leader><F4>', vim.cmd.UndotreeShow)
 
 vim.keymap.set('n', '<C-x><C-f>', vim.cmd.Oil)
+
+vim.keymap.set({'n', 'x', 'o'}, 's', '<Plug>(leap)')
+vim.keymap.set('n',             'S', '<Plug>(leap-from-window)')
+
+vim.keymap.set({'n', 'x', 'o'}, 's',  '<Plug>(leap-forward)')
+vim.keymap.set({'n', 'x', 'o'}, 'S',  '<Plug>(leap-backward)')
+vim.keymap.set('n',             'gs', '<Plug>(leap-from-window)')
+
+vim.keymap.set({'x', 'o'}, 'x', '<Plug>(leap-forward-till)')
+vim.keymap.set({'x', 'o'}, 'X', '<Plug>(leap-backward-till)')
