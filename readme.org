@@ -1,0 +1,82 @@
+* My Neovim Configuration
+
+This is my personal Neovim configuration. It uses [lazy.nvim](https://github.com/folke/lazy.nvim) for plugin management.
+
+** Features
+
+- **Window Navigation:** `Ctrl-h/j/k/l` to move between splits
+- **Custom Movement Warnings:** Prevent use of arrow keys in normal/insert mode
+- **Color Scheme:** Carbonfox by default
+- **Line Numbers & Scrolling:** Relative settings for better navigation
+- **Indentation:** 2-space tabs with autoindent and smartindent
+- **Search:** Smartcase, incremental search, no highlight
+- **Visuals:** 24-bit colors, matching brackets, popup transparency
+- **File Handling:** Persistent undo, no swap/backup files
+- **Behavior:** Hidden buffers, system clipboard, UTF-8 encoding
+- **Cursor:** Custom GUI cursor for different modes
+- **Treesitter:** Syntax highlighting with file size limit
+- **Mini.nvim:** Smart text objects (`mini.ai`)
+- **Telescope:** Fuzzy finder commands
+- **Undo Tree:** Persistent undo visualizer
+- **Oil:** File explorer integration
+- **Leap:** Smart motion plugin
+
+** Installation
+
+1. Install Neovim >= 0.9
+2. Clone this repository:
+#+BEGIN_SRC bash
+# for codeberg
+git clone https://codeberg.org/segfaulted67/nvim-config.git ~/.config/nvim
+# for github
+git clone https://github.com/segfaulted67/nvim-config.git ~/.config/nvim
+
+#+END_SRC
+3. Open Neovim and run `:Lazy sync`
+
+** Key Mappings
+
+*** Window Navigation
+- `Ctrl-h/j/k/l` → Move focus between splits
+
+*** Arrow Key Warnings
+- `<left>/<right>/<up>/<down>` is prohibited  to use
+
+*** Telescope
+- `<leader>ff` → Find files
+- `<leader>fg` → Live grep
+- `<leader>fb` → List buffers
+- `<leader>fh` → Help tags
+
+*** Undo Tree
+- `<leader><F5>` → Toggle undo tree
+- `<leader><F4>` → Show undo tree
+
+*** Oil (File Explorer)
+- `Ctrl-x Ctrl-f` → Open Oil(EMACS EMACS EMACS)
+
+*** Leap
+- `s` → Leap forward
+- `S` → Leap backward
+- `gs` → Leap from window
+
+** Plugins
+
+- **Carbonfox** – Main colorscheme
+- **Moonfly** – Optional colorscheme
+- **Fugitive** – Git integration
+- **Leap** – Motion plugin
+- **Mini.nvim** – Text objects and utilities
+- **Multi-Cursor** – Multiple cursors support
+- **Oil** – File explorer
+- **Repeat** – Repeat plugin commands
+- **Surround** – Easily add/change surrounding characters
+- **Telescope** – Fuzzy finder
+- **Tree-sitter** – Syntax highlighting
+- **Undo-tree** – Persistent undo visualizer
+
+** Notes
+
+- Arrow key warnings encourage Vim-style navigation.
+- You can toggle transparency by uncommenting `hi Normal guibg=NONE` in `init.lua`.
+
