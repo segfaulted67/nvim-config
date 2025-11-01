@@ -13,7 +13,7 @@ vim.keymap.set({'n', 'i'}, '<right>', '<cmd>echo "Use l to move!!"<CR>')
 vim.keymap.set({'n', 'i'}, '<up>', '<cmd>echo "Use k to move!!"<CR>')
 vim.keymap.set({'n', 'i'}, '<down>', '<cmd>echo "Use j to move!!"<CR>')
 
-vim.cmd("colorscheme carbonfox")
+vim.cmd("colorscheme ir_black")
 vim.cmd("set nocursorline")
 -- uncomment it to remove transparancy 
 -- vim.cmd("hi Normal guibg=NONE")
