@@ -6,7 +6,7 @@ This is my personal Neovim configuration. It uses [lazy.nvim](https://github.com
 
 - **Window Navigation:** `Ctrl-h/j/k/l` to move between splits
 - **Custom Movement Warnings:** Prevent use of arrow keys in normal/insert mode
-- **Color Scheme:** Carbonfox by default
+- **Color Scheme:** Ir_black by default
 - **Line Numbers & Scrolling:** Relative settings for better navigation
 - **Indentation:** 2-space tabs with autoindent and smartindent
 - **Search:** Smartcase, incremental search, no highlight
@@ -62,8 +62,8 @@ git clone https://github.com/segfaulted67/nvim-config.git ~/.config/nvim
 
 ** Plugins
 
-- **Carbonfox** – Main colorscheme
-- **Moonfly** – Optional colorscheme
+- **Ir_black** – Main colorscheme
+- **Moonfly, Moonfly** – Optional colorscheme
 - **Fugitive** – Git integration
 - **Leap** – Motion plugin
 - **Mini.nvim** – Text objects and utilities
