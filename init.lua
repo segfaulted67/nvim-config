@@ -2,17 +2,6 @@ require("config.lazy")
 require("plugins.moonfly")
 
 
---  See `:help wincmd` for a list of all window commands
-vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
-vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
-vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
-vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
-
-vim.keymap.set({'n', 'i'}, '<left>', '<cmd>echo "Use h to move!!"<CR>')
-vim.keymap.set({'n', 'i'}, '<right>', '<cmd>echo "Use l to move!!"<CR>')
-vim.keymap.set({'n', 'i'}, '<up>', '<cmd>echo "Use k to move!!"<CR>')
-vim.keymap.set({'n', 'i'}, '<down>', '<cmd>echo "Use j to move!!"<CR>')
-
 vim.cmd("colorscheme ir_black")
 vim.cmd("set nocursorline")
 -- uncomment it to remove transparancy 
@@ -21,8 +10,9 @@ vim.cmd("set nocursorline")
 -- Basic settings
 vim.opt.number = true                              -- Line numbers
 vim.opt.wrap = false                               -- Don't wrap lines
-vim.opt.scrolloff = 5                              -- Keep 10 lines above/below cursor 
-vim.opt.sidescrolloff = 5                          -- Keep 8 columns left/right of cursor
+vim.opt.scrolloff = 0                              -- Keep 0 lines above/below cursor 
+vim.opt.scrolljump = 10                            -- Emacs type shi
+vim.opt.sidescrolloff = 5                          -- Keep 5 columns left/right of cursor
 vim.opt.mouse = ""                                 -- Disable Mouse
 
 
@@ -82,28 +72,35 @@ vim.opt.encoding = "UTF-8"                         -- Set encoding
 -- Cursor settings
 vim.opt.guicursor = "n-v-c:block,i-ci-ve:block,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175"
 
--- mini-ai
-require('mini.ai').setup()
--- notify
-require("notify")
--- dressing
-
 -- keymaps
+--  See `:help wincmd` for a list of all window commands
+vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
+vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
+vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
+vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
+
+vim.keymap.set({'n', 'i'}, '<left>', '<cmd>echo "Use h to move!!"<CR>')
+vim.keymap.set({'n', 'i'}, '<right>', '<cmd>echo "Use l to move!!"<CR>')
+vim.keymap.set({'n', 'i'}, '<up>', '<cmd>echo "Use k to move!!"<CR>')
+vim.keymap.set({'n', 'i'}, '<down>', '<cmd>echo "Use j to move!!"<CR>')
+
+-- telescope keymaps
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 vim.keymap.set('n', '<leader>fn', ':Telescope notify<CR>', { desc = 'Telescope notify' })
+vim.keymap.set('n', '<leader>fs', vim.cmd.BLines)
 -- undo-tree
-vim.keymap.set('n', '<leader><F5>', vim.cmd.UndotreeToggle)
-vim.keymap.set('n', '<leader><F4>', vim.cmd.UndotreeShow)
+vim.keymap.set('n', '<leader>ut', vim.cmd.UndotreeToggle)
 
 vim.keymap.set('n', '<C-x><C-f>', vim.cmd.Oil)
 
 vim.keymap.set({'n', 'x', 'o'}, 's', '<Plug>(leap)')
-vim.keymap.set('n',             'S', '<Plug>(leap-from-window)')
+vim.keymap.set('n', 'S', '<Plug>(leap-from-window)')
 
 vim.keymap.set({'n', 'x', 'o'}, 's',  '<Plug>(leap-forward)')
 vim.keymap.set({'n', 'x', 'o'}, 'S',  '<Plug>(leap-backward)')
 vim.keymap.set('n', 'gs', '<Plug>(leap-from-window)')
+
