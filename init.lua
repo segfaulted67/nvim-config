@@ -82,31 +82,19 @@ vim.opt.encoding = "UTF-8"                         -- Set encoding
 -- Cursor settings
 vim.opt.guicursor = "n-v-c:block,i-ci-ve:block,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175"
 
+-- mini-ai
 require('mini.ai').setup()
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline" },
-  sync_install = false,
-  auto_install = false,
-  ignore_install = { "javascript" },
-  highlight = {
-    enable = true,
-    disable = { "javascript" },
-    disable = function(lang, buf)
-        local max_filesize = 100 * 1024 -- 100 KB
-        local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
-        if ok and stats and stats.size > max_filesize then
-            return true
-        end
-    end,
-    additional_vim_regex_highlighting = false,
-  },
-}
+-- notify
+require("notify")
+-- dressing
 
+-- keymaps
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
+vim.keymap.set('n', '<leader>fn', ':Telescope notify<CR>', { desc = 'Telescope notify' })
 -- undo-tree
 vim.keymap.set('n', '<leader><F5>', vim.cmd.UndotreeToggle)
 vim.keymap.set('n', '<leader><F4>', vim.cmd.UndotreeShow)
@@ -118,5 +106,4 @@ vim.keymap.set('n',             'S', '<Plug>(leap-from-window)')
 
 vim.keymap.set({'n', 'x', 'o'}, 's',  '<Plug>(leap-forward)')
 vim.keymap.set({'n', 'x', 'o'}, 'S',  '<Plug>(leap-backward)')
-vim.keymap.set('n',             'gs', '<Plug>(leap-from-window)')
-
+vim.keymap.set('n', 'gs', '<Plug>(leap-from-window)')

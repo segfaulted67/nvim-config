@@ -8,6 +8,12 @@ return{
     "MunifTanjim/nui.nvim",
     "rcarriga/nvim-notify",
   },
+  routes = {
+    {
+      filter = { event = "msg_show", find = "git" },
+      opts = { skip = true },
+    },
+  },
   config = function()
     vim.o.lazyredraw = false
     require("noice").setup({
