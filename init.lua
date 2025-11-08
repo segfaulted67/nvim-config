@@ -11,7 +11,7 @@ vim.cmd("set nocursorline")
 vim.opt.number = true                              -- Line numbers
 vim.opt.wrap = false                               -- Don't wrap lines
 vim.opt.scrolloff = 0                              -- Keep 0 lines above/below cursor 
-vim.opt.scrolljump = 10                            -- Emacs type shi
+vim.opt.scrolljump = 27                            -- Emacs type shi
 vim.opt.sidescrolloff = 5                          -- Keep 5 columns left/right of cursor
 vim.opt.mouse = ""                                 -- Disable Mouse
 
@@ -88,7 +88,8 @@ vim.keymap.set({'n', 'i'}, '<down>', '<cmd>echo "Use j to move!!"<CR>')
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
-vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
+-- vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
+vim.keymap.set('n', '<leader>fb', vim.cmd.Buffers, { desc = 'fzf.vim buffers' })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 vim.keymap.set('n', '<leader>fn', ':Telescope notify<CR>', { desc = 'Telescope notify' })
 vim.keymap.set('n', '<leader>fs', vim.cmd.BLines)

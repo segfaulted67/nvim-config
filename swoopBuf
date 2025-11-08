@@ -1,4 +1,0 @@
-
-init.lua
-1	102	vim.keymap.set('n', '<C-x><C-f>', vim.cmd.Oil)
-
