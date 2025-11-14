@@ -1,3 +1,9 @@
+* Screenshots
+- [[./screenshots/vim.png]]
+- [[./screenshots/vim-config.png]]
+- [[./screenshots/telescope.png]]
+- [[./screenshots/oil.png]]
+
 * My Neovim Configuration
 
 This is my personal Neovim configuration. It uses [lazy.nvim](https://github.com/folke/lazy.nvim) for plugin management.
@@ -80,8 +86,3 @@ git clone https://github.com/segfaulted67/nvim-config.git ~/.config/nvim
 - Arrow key warnings encourage Vim-style navigation.
 - You can toggle transparency by uncommenting `hi Normal guibg=NONE` in `init.lua`.
 
-* Screenshots
-- [[./screenshots/vim.png]]
-- [[./screenshots/vim-config.png]]
-- [[./screenshots/telescope.png]]
-- [[./screenshots/oil.png]]
