@@ -84,15 +84,6 @@ vim.keymap.set({'n', 'i'}, '<right>', '<cmd>echo "Use l to move!!"<CR>')
 vim.keymap.set({'n', 'i'}, '<up>', '<cmd>echo "Use k to move!!"<CR>')
 vim.keymap.set({'n', 'i'}, '<down>', '<cmd>echo "Use j to move!!"<CR>')
 
--- telescope keymaps
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
--- vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
-vim.keymap.set('n', '<leader>fb', vim.cmd.Buffers, { desc = 'fzf.vim buffers' })
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
-vim.keymap.set('n', '<leader>fn', ':Telescope notify<CR>', { desc = 'Telescope notify' })
-vim.keymap.set('n', '<leader>fs', vim.cmd.BLines)
 -- undo-tree
 vim.keymap.set('n', '<leader>ut', vim.cmd.UndotreeToggle)
 
