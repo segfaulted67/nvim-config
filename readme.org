@@ -1,7 +1,7 @@
 * Screenshots
-- [[./screenshots/vim.png]]
-- [[./screenshots/vim-config.png]]
-- [[./screenshots/telescope.png]]
+- [[./screenshots/nvim.png]]
+- [[./screenshots/noice.png]]
+- [[./screenshots/picker.png]]
 - [[./screenshots/oil.png]]
 
 * My Neovim Configuration
