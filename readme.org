@@ -6,7 +6,7 @@
 
 * My Neovim Configuration
 
-This is my personal Neovim configuration. It uses [lazy.nvim](https://github.com/folke/lazy.nvim) for plugin management.
+This is my personal Neovim configuration. It uses [[https://github.com/folke/lazy.nvim][lazy.nvim]] for plugin management.
 
 
 ** Installation
