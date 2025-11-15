@@ -4,7 +4,7 @@ require("config.options")
 require("plugins.moonfly")
 
 
-
+-- Refrence: https://github.com/radleylewis/nvim-lite
 vim.cmd.colorscheme("ir_black")
 -- uncomment it if you want transparancy 
 -- vim.cmd("hi Normal guibg=NONE")
