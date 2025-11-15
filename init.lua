@@ -1,20 +1,21 @@
 require("config.lazy")
 require("config.keymap")
+require("config.options")
 require("plugins.moonfly")
 
 
-vim.cmd("colorscheme ir_black")
-vim.cmd("set nocursorline")
--- uncomment it to remove transparancy 
+
+vim.cmd.colorscheme("ir_black")
+-- uncomment it if you want transparancy 
 -- vim.cmd("hi Normal guibg=NONE")
 
 -- Basic settings
 vim.opt.number = true                              -- Line numbers
 vim.opt.wrap = false                               -- Don't wrap lines
 vim.opt.scrolloff = 0                              -- Keep 0 lines above/below cursor 
-vim.opt.scrolljump = 27                            -- Emacs type shi
 vim.opt.sidescrolloff = 5                          -- Keep 5 columns left/right of cursor
 vim.opt.mouse = ""                                 -- Disable Mouse
+vim.opt.cursorline = false                         -- Disable Cursorline
 
 
 -- Indentation

@@ -1,0 +1,9 @@
+-- Emacs type shi
+local function update_scrolljump()
+  local height = vim.api.nvim_win_get_height(0)
+  vim.opt.scrolljump = math.floor(height/2)
+end
+update_scrolljump()
+vim.api.nvim_create_autocmd("VimResized", {
+    callback = update_scrolljump,
+})

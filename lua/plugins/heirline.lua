@@ -91,6 +91,7 @@ return {
                 hl = { fg = colors.fg, bold = true },
             },
 
+
             {
                 condition = function()
                     return vim.bo.modified
@@ -192,11 +193,21 @@ return {
         }
 
         -----------------------------------------------------------------------
+        -- TERMINAL
+        -----------------------------------------------------------------------
+        local Terminal = {
+            condition = function() return vim.bo.buftype == "terminal" end,
+            provider = "  Terminal ",
+            hl = { fg = colors.green, bold = true },
+        }
+
+        -----------------------------------------------------------------------
         --  FULL STATUSLINE 
         --  -----------------------------------------------------------------------
         local StatusLine = {
             ViMode,
             FileNameBlock,
+            Terminal,
             Git,
             Diagnostics,
 
