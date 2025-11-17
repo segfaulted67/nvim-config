@@ -7,6 +7,7 @@ require("config.options")
 
 
 vim.cmd.colorscheme("ir_black")
+
 -- uncomment it if you want transparancy 
 -- vim.cmd("hi Normal guibg=NONE")
 
