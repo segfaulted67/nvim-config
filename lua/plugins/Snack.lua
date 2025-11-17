@@ -9,14 +9,16 @@ return{
       fps = 90,
       scroll = { enabled = true },
       resize = { enabled = true },
-  },
+    },
     bigfile = { enabled = true },
     dashboard = {
       enabled = true,
       sections = {
         { section = "header" },
         { section = "startup" },
-        { section = "session" },
+      },
+      opts = {
+        cursor = { row = 1, col = 1 },
       },
     },
     explorer = { enabled = false},

@@ -1,16 +1,10 @@
 return{
-  { 
-    'nvim-mini/mini.ai', 
-    version = false,
-    config = function()
-      require('mini.ai').setup()
-    end,
-  },
-  {
-    'nvim-mini/mini.surround', 
-    version = false,
-    config = function()
-      require('mini.surround').setup()
-    end,
-  },
+  'nvim-mini/mini.nvim',
+  version = false,
+  config = function()
+    require("mini.ai").setup()
+    require("mini.move").setup()
+    require("mini.surround").setup()
+    require("mini.bufremove").setup()
+  end,
 }
