@@ -1,26 +1,25 @@
-* Screenshots
-- [[./screenshots/nvim.png]]
-- [[./screenshots/noice.png]]
-- [[./screenshots/picker.png]]
-- [[./screenshots/oil.png]]
+** Screenshots
+  - [[./screenshots/nvim.png]]
+  - [[./screenshots/noice.png]]
+  - [[./screenshots/picker.png]]
+  - [[./screenshots/oil.png]]
 
-* My Neovim Configuration
+** My Neovim Configuration
 
-This is my personal Neovim configuration. It uses [[https://github.com/folke/lazy.nvim][lazy.nvim]] for plugin management.
+  This is my personal Neovim configuration. It uses [[https://github.com/folke/lazy.nvim][lazy.nvim]] for plugin management.
 
 
 ** Installation
 
-1. Install Neovim >= 0.9
-2. Clone this repository:
-#+BEGIN_SRC bash
-# for codeberg
-git clone https://codeberg.org/segfaulted67/nvim-config.git ~/.config/
-mv nvim-config nvim/
-# for github
-git clone https://github.com/segfaulted67/nvim-config.git ~/.config/
-mv nvim-config nvim/
+  1. Install Neovim >= 0.9
+  2. Clone this repository:
+    #+BEGIN_SRC bash
+    # for codeberg
+    git clone https://codeberg.org/segfaulted67/nvim-config.git ~/.config/
+    mv nvim-config nvim/
+    # for github
+    git clone https://github.com/segfaulted67/nvim-config.git ~/.config/
+    mv nvim-config nvim/
 
-#+END_SRC
-3. Open Neovim and run `:Lazy sync`
-
+    #+END_SRC
+  3. Open Neovim and run `:Lazy sync`
