@@ -8,10 +8,10 @@ return{
     require("mini.bufremove").setup()
     require("mini.cursorword").setup()
     require("mini.comment").setup()
-    require("mini.splitjoin").setup()
+    require("mini.splitjoin").setup()  
     require("mini.surround").setup()
     require("mini.move").setup()
-    require("mini.pairs").setup()
+    -- require("mini.pairs").setup()
     require("mini.jump").setup()
     require("mini.files").setup({
       options = {

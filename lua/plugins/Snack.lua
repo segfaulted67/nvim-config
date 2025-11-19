@@ -178,12 +178,12 @@ return{
 
 
         -- Overwrite Snack picker colors for ir_black
-        vim.api.nvim_set_hl(0, "Directory", { fg = "#7AA2F7" })       
-        vim.api.nvim_set_hl(0, "SnacksPickerDir", { fg = "#7AA2F7" })   
-        vim.api.nvim_set_hl(0, "SnacksPickerMatch", { fg = "#E0AF68" })
-        vim.api.nvim_set_hl(0, "SnacksPickerBorder", { fg = "#4E4E4E" })
-        vim.api.nvim_set_hl(0, "SnacksPickerPrompt", { fg = "#A9B1D6" })
-        vim.api.nvim_set_hl(0, "SnacksPickerTitle", { fg = "#7DCFFF" })
+        -- vim.api.nvim_set_hl(0, "Directory", { fg = "#7AA2F7" })       
+        -- vim.api.nvim_set_hl(0, "SnacksPickerDir", { fg = "#7AA2F7" })   
+        -- vim.api.nvim_set_hl(0, "SnacksPickerMatch", { fg = "#E0AF68" })
+        -- vim.api.nvim_set_hl(0, "SnacksPickerBorder", { fg = "#4E4E4E" })
+        -- vim.api.nvim_set_hl(0, "SnacksPickerPrompt", { fg = "#A9B1D6" })
+        -- vim.api.nvim_set_hl(0, "SnacksPickerTitle", { fg = "#7DCFFF" })
       end,
     })
 

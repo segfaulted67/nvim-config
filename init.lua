@@ -6,18 +6,18 @@ require("config.options")
 -- Reference: https://github.com/radleylewis/nvim-lite
 
 
-vim.cmd.colorscheme("ir_black")
+vim.cmd.colorscheme("dark")
 
 -- uncomment it if you want transparancy 
 -- vim.cmd("hi Normal guibg=NONE")
 
 -- Basic settings
 vim.opt.number = true                              -- Line numbers
-vim.opt.wrap = false                               -- Don't wrap lines
+vim.opt.wrap = true                                -- Don't wrap lines
 vim.opt.scrolloff = 0                              -- Keep 0 lines above/below cursor 
 vim.opt.sidescrolloff = 5                          -- Keep 5 columns left/right of cursor
 vim.opt.mouse = ""                                 -- Disable Mouse
-vim.opt.cursorline = false                         -- Disable Cursorline
+vim.opt.cursorline = true                          -- Disable Cursorline
 
 
 -- Indentation

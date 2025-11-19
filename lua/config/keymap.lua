@@ -15,11 +15,4 @@ vim.keymap.set('n', '<leader>ut', vim.cmd.UndotreeToggle)
 
 vim.keymap.set('n', '<C-x><C-f>', vim.cmd.Oil)
 
-vim.keymap.set({'n', 'x', 'o'}, 's', '<Plug>(leap)')
-vim.keymap.set('n', 'S', '<Plug>(leap-from-window)')
-
-vim.keymap.set({'n', 'x', 'o'}, 's',  '<Plug>(leap-forward)')
-vim.keymap.set({'n', 'x', 'o'}, 'S',  '<Plug>(leap-backward)')
-vim.keymap.set('n', 'gs', '<Plug>(leap-from-window)')
-
 vim.keymap.set("n", "<leader>e", require("mini.files").open, { desc = "Open Mini Files" })

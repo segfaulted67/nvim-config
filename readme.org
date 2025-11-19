@@ -23,3 +23,4 @@
 
     #+END_SRC
   3. Open Neovim and run `:Lazy sync`
+

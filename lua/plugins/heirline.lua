@@ -21,6 +21,14 @@ return {
         }
 
         -----------------------------------------------------------------------
+        -- NYAN MODE (EMACS NYAN MODE)
+        -----------------------------------------------------------------------
+       local nyan = {
+         provider = function() return require("NyanCat").render() end,
+       }
+
+
+        -----------------------------------------------------------------------
         --  MODE COMPONENT (left side like DOOM)
         -----------------------------------------------------------------------
         local ViMode = {
@@ -214,7 +222,8 @@ return {
             -- spacer to push right side
             { provider = "%=" },
 
-            Percent,
+            nyan,
+            -- Percent,
             Ruler,
         }
 
