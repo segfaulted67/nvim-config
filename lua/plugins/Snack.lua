@@ -28,11 +28,14 @@ return{
       enabled = true,
       timeout = 3000,
     },
-    picker = { enabled = true },
+    picker = { 
+      enabled = true,
+      layout = "ivy_split",
+    },
     quickfile = { enabled = true },
     scope = { enabled = true },
     scroll = { enabled = true },
-    statuscolumn = { enabled = true },
+    statuscolumn = { enabled = false },
     words = { enabled = true },
     styles = {
       notification = {
