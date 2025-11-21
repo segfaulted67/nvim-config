@@ -6,7 +6,7 @@ require("config.options")
 -- Reference: https://github.com/radleylewis/nvim-lite
 
 
-vim.cmd.colorscheme("dark")
+vim.cmd.colorscheme("doom-one")
 
 -- uncomment it if you want transparancy 
 -- vim.cmd("hi Normal guibg=NONE")
@@ -17,7 +17,7 @@ vim.opt.wrap = true                                -- Don't wrap lines
 vim.opt.scrolloff = 0                              -- Keep 0 lines above/below cursor 
 vim.opt.sidescrolloff = 5                          -- Keep 5 columns left/right of cursor
 vim.opt.mouse = ""                                 -- Disable Mouse
-vim.opt.cursorline = true                          -- Disable Cursorline
+vim.opt.cursorline = false                        -- Disable Cursorline
 
 
 -- Indentation
@@ -75,4 +75,5 @@ vim.opt.encoding = "UTF-8"                         -- Set encoding
 
 -- Cursor settings
 vim.opt.guicursor = "n-v-c:block,i-ci-ve:block,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175"
+
 
