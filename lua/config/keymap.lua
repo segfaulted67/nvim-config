@@ -10,6 +10,7 @@ vim.keymap.set({'n', 'i'}, '<right>', '<cmd>echo "Use l to move!!"<CR>')
 vim.keymap.set({'n', 'i'}, '<up>', '<cmd>echo "Use k to move!!"<CR>')
 vim.keymap.set({'n', 'i'}, '<down>', '<cmd>echo "Use j to move!!"<CR>')
 
+vim.keymap.set('n', '<leader>ll', '<cmd>Lazy<CR>')
 -- undo-tree
 vim.keymap.set('n', '<leader>ut', vim.cmd.UndotreeToggle)
 

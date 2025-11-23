@@ -17,7 +17,7 @@ vim.opt.wrap = true                                -- Don't wrap lines
 vim.opt.scrolloff = 0                              -- Keep 0 lines above/below cursor 
 vim.opt.sidescrolloff = 5                          -- Keep 5 columns left/right of cursor
 vim.opt.mouse = ""                                 -- Disable Mouse
-vim.opt.cursorline = false                        -- Disable Cursorline
+vim.opt.cursorline = true                          -- Disable Cursorline
 
 
 -- Indentation
