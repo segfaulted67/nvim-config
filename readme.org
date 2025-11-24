@@ -26,7 +26,7 @@
 ** Plugins
    - [[https://github.com/folke/snacks.nvim][snack]]
    - [[https://github.com/yilisharcs/cme.nvim][cme]]
-   - [[https://github.com/twerth/ir_black][ir_black], [[https://github.com/NTBBloodbath/doom-one.nvim][doom-one]], [[https://github.com/folke/tokyonight.nvim][tokyonight]], [[https://github.com/doums/dark.nvim][dark]], [[https://github.com/mazzettimatteo/Whitney][whitney]]
+   - [[https://github.com/twerth/ir_black][ir_black]], [[https://github.com/NTBBloodbath/doom-one.nvim][doom-one]], [[https://github.com/folke/tokyonight.nvim][tokyonight]], [[https://github.com/doums/dark.nvim][dark]], [[https://github.com/mazzettimatteo/Whitney][whitney]]
    - [[https://github.com/folke/flash.nvim][flash]]
    - [[https://github.com/tpope/vim-fugitive][fugitive]]
    - [[https://github.com/lewis6991/gitsigns.nvim][gitsigns]]
