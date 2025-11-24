@@ -11,8 +11,7 @@
 
 ** Installation
 
-  1. Install Neovim >= 0.9
-  2. Clone this repository:
+  1. Clone this repository:
     #+BEGIN_SRC bash
     # for codeberg
     git clone https://codeberg.org/segfaulted67/nvim-config.git ~/.config/
@@ -22,5 +21,30 @@
     mv nvim-config nvim/
 
     #+END_SRC
-  3. Open Neovim and run `:Lazy sync`
+  2. Open Neovim and run `:Lazy sync`
+
+** Plugins
+   - [[https://github.com/folke/snacks.nvim][snack]]
+   - [[https://github.com/yilisharcs/cme.nvim][cme]]
+   - [[https://github.com/twerth/ir_black][ir_black], [[https://github.com/NTBBloodbath/doom-one.nvim][doom-one]], [[https://github.com/folke/tokyonight.nvim][tokyonight]], [[https://github.com/doums/dark.nvim][dark]], [[https://github.com/mazzettimatteo/Whitney][whitney]]
+   - [[https://github.com/folke/flash.nvim][flash]]
+   - [[https://github.com/tpope/vim-fugitive][fugitive]]
+   - [[https://github.com/lewis6991/gitsigns.nvim][gitsigns]]
+   - [[https://github.com/neovim/nvim-lspconfig][lspconfig]]
+   - [[https://github.com/nvim-lualine/lualine.nvim][lualine]]
+   - [[https://github.com/mason-org/mason.nvim][meson]]
+   - [[https://github.com/nvim-mini/mini.nvim][mini]]
+   - [[https://github.com/mg979/vim-visual-multi][multi-cursor]]
+   - [[https://github.com/folke/noice.nvim][noice]]
+   - [[https://github.com/stevearc/oil.nvim][oil]]
+   - [[https://github.com/nvim-orgmode/org-bullets.nvim][org-bullets]]
+   - [[https://github.com/nvim-orgmode/orgmode][org-mode]]
+   - [[https://github.com/stevearc/quicker.nvim][quicker]]
+   - [[https://github.com/tpope/vim-repeat][repeat]]
+   - [[https://github.com/segfaulted67/rln.nvim][rln]]
+   - [[https://github.com/nvim-treesitter/nvim-treesitter][tree-sitter]]
+   - [[https://github.com/gisketch/triforce.nvim][triforce]]
+   - [[https://github.com/nvzone/typr][typr]]
+   - [[https://github.com/mbbill/undotree][undo-tree]]
+   - [[https://github.com/folke/which-key.nvim][which-key]]
 

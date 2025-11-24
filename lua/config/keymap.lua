@@ -16,4 +16,3 @@ vim.keymap.set('n', '<leader>ut', vim.cmd.UndotreeToggle)
 
 vim.keymap.set('n', '<C-x><C-f>', vim.cmd.Oil)
 
-vim.keymap.set("n", "<leader>e", require("mini.files").open, { desc = "Open Mini Files" })

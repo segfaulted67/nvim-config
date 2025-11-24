@@ -13,11 +13,6 @@ return{
     require("mini.move").setup()
     -- require("mini.pairs").setup()
     require("mini.jump").setup()
-    require("mini.files").setup({
-      options = {
-        use_as_default_explorer = true,
-      },
-    })
     require("mini.pick").setup()
     -- require("mini.snippets").setup()
     -- require("mini.completion").setup()
