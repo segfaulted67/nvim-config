@@ -2,5 +2,7 @@ return{
   'neovim/nvim-lspconfig',
   config = function()
     -- vim.lsp.enable('clangd')
-  end
+    -- vim.lsp.enable('zls')
+    -- vim.lsp.enable("lua_ls")
+  end,
 }
