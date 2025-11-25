@@ -184,6 +184,18 @@ return{
 
       -- Add components to right sections
       ins_right {
+        function()
+          local reg = vim.fn.reg_recording()
+          if reg == "" then
+            return ""
+          else
+            return " REC @" .. reg
+          end
+        end,
+        color = { fg = colors.red, gui = "bold" },
+      }
+
+      ins_right {
         'o:encoding', -- option component same as &encoding in viml
         fmt = string.upper, -- I'm not sure why it's upper case either ;)
         cond = conditions.hide_in_width,
