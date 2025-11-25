@@ -48,3 +48,5 @@
    - [[https://github.com/mbbill/undotree][undo-tree]]
    - [[https://github.com/folke/which-key.nvim][which-key]]
 
+** Credits
+   - [[https://github.com/rockerBOO/awesome-neovim?tab=readme-ov-file][awesome-neovim]]

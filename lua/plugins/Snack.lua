@@ -4,11 +4,8 @@ return{
   lazy = false,
   ---@type snacks.Config
   opts = {
-    animate = { 
+    animate = {
       enable = false,
-      fps = 90,
-      scroll = { enabled = true },
-      resize = { enabled = true },
     },
     bigfile = { enabled = true },
     dashboard = {
@@ -22,17 +19,17 @@ return{
       },
       preset = {
         header = [[
-       ███▄▄▄▄      ▄████████  ▄██████▄   ▄█    █▄   ▄█    ▄▄▄▄███▄▄▄▄   
-       ███▀▀▀██▄   ███    ███ ███    ███ ███    ███ ███  ▄██▀▀▀███▀▀▀██▄ 
-       ███   ███   ███    █▀  ███    ███ ███    ███ ███▌ ███   ███   ███ 
-       ███   ███  ▄███▄▄▄     ███    ███ ███    ███ ███▌ ███   ███   ███ 
-       ███   ███ ▀▀███▀▀▀     ███    ███ ███    ███ ███▌ ███   ███   ███ 
-       ███   ███   ███    █▄  ███    ███ ███    ███ ███  ███   ███   ███ 
-       ███   ███   ███    ███ ███    ███ ███    ███ ███  ███   ███   ███ 
-        ▀█   █▀    ██████████  ▀██████▀   ▀██████▀  █▀    ▀█   ███   █▀  
+       ███▄▄▄▄      ▄████████  ▄██████▄   ▄█    █▄   ▄█    ▄▄▄▄███▄▄▄▄
+       ███▀▀▀██▄   ███    ███ ███    ███ ███    ███ ███  ▄██▀▀▀███▀▀▀██▄
+       ███   ███   ███    █▀  ███    ███ ███    ███ ███▌ ███   ███   ███
+       ███   ███  ▄███▄▄▄     ███    ███ ███    ███ ███▌ ███   ███   ███
+       ███   ███ ▀▀███▀▀▀     ███    ███ ███    ███ ███▌ ███   ███   ███
+       ███   ███   ███    █▄  ███    ███ ███    ███ ███  ███   ███   ███
+       ███   ███   ███    ███ ███    ███ ███    ███ ███  ███   ███   ███
+        ▀█   █▀    ██████████  ▀██████▀   ▀██████▀  █▀    ▀█   ███   █▀
         ]],
       },
-    }, 
+    },
     explorer = { enabled = false },
     indent = { enabled = true },
     input = { enabled = true },
@@ -40,7 +37,7 @@ return{
       enabled = true,
       timeout = 3000,
     },
-    picker = { 
+    picker = {
       enabled = true,
       layout = "ivy_split",
     },
@@ -176,7 +173,7 @@ return{
             dd(...)
           end
         else
-          vim.print = _G.dd 
+          vim.print = _G.dd
         end
 
         -- Create some toggle mappings
@@ -194,8 +191,8 @@ return{
 
 
         -- Overwrite Snack picker colors for ir_black
-        vim.api.nvim_set_hl(0, "Directory", { fg = "#7AA2F7" })       
-        vim.api.nvim_set_hl(0, "SnacksPickerDir", { fg = "#7AA2F7" })   
+        vim.api.nvim_set_hl(0, "Directory", { fg = "#7AA2F7" })
+        vim.api.nvim_set_hl(0, "SnacksPickerDir", { fg = "#7AA2F7" })
         vim.api.nvim_set_hl(0, "SnacksPickerMatch", { fg = "#E0AF68" })
         vim.api.nvim_set_hl(0, "SnacksPickerBorder", { fg = "#4E4E4E" })
         vim.api.nvim_set_hl(0, "SnacksPickerPrompt", { fg = "#A9B1D6" })
