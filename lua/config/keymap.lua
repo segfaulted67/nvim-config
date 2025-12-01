@@ -2,6 +2,7 @@
 --  See `:help wincmd` for a list of all window commands
 local map = vim.keymap.set
 
+map({'n', 'i', 'v' }, '<M-x>', ':', { desc = 'Emacs type M-x' })
 map('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
 map('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 map('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
@@ -21,4 +22,6 @@ map('n', '<leader>ll', '<cmd>Lazy<CR>')
 map('n', '<leader>ut', vim.cmd.UndotreeToggle)
 
 map('n', '<C-x><C-f>', vim.cmd.Oil)
-map("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+map('n', '<leader>e', function() require("oil").open_float(".") end)
+-- map("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+

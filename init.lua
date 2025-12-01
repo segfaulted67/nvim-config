@@ -6,7 +6,7 @@ require("config.options")
 -- Reference: https://github.com/radleylewis/nvim-lite
 
 
-vim.cmd.colorscheme("doom-one")
+vim.cmd.colorscheme("oxocarbon")
 
 -- uncomment it if you want transparancy
 -- vim.cmd("hi Normal guibg=NONE")
