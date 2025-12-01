@@ -5,4 +5,5 @@ return{
     -- vim.lsp.enable('zls')
     -- vim.lsp.enable("lua_ls")
   end,
+  lazy = false,
 }

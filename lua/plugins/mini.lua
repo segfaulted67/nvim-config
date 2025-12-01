@@ -7,7 +7,6 @@ return{
     require('mini.bracketed').setup()
     require("mini.bufremove").setup()
     require("mini.cursorword").setup()
-    require("mini.comment").setup()
     require("mini.splitjoin").setup()
     require("mini.surround").setup()
     require("mini.move").setup()

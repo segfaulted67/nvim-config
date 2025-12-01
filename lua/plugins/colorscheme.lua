@@ -1,11 +1,12 @@
 return{
   {
-    'doums/dark.nvim',
-    lazy = false,
-    priority = 1000,
+    'https://github.com/twerth/ir_black.git'
   },
   {
-    'https://github.com/twerth/ir_black.git'
+    "nyoom-engineering/oxocarbon.nvim"
+  },
+  {
+    "rebelot/kanagawa.nvim",
   },
   {
     'NTBBloodbath/doom-one.nvim',
@@ -42,12 +43,9 @@ return{
     end
   },
   {
-    'mazzettimatteo/Whitney'
-  },
-  {
     "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
     opts = {},
-  }
+  },
 }

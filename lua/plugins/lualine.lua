@@ -1,6 +1,7 @@
 return{
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
+    lazy = false,
 
     config = function()
 
@@ -205,7 +206,7 @@ return{
       ins_right {
         'fileformat',
         fmt = string.upper,
-        icons_enabled = false, -- I think icons are cool but Eviline doesn't have them. sigh
+        icons_enabled = true,
         color = { fg = colors.green, gui = 'bold' },
       }
 

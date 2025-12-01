@@ -22,6 +22,6 @@ map('n', '<leader>ll', '<cmd>Lazy<CR>')
 map('n', '<leader>ut', vim.cmd.UndotreeToggle)
 
 map('n', '<C-x><C-f>', vim.cmd.Oil)
-map('n', '<leader>e', function() require("oil").open_float(".") end)
+-- map('n', '<leader>e', function() require("oil").open_float(".") end)
 -- map("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
