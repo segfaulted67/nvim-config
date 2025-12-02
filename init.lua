@@ -3,10 +3,11 @@ require("config.keymap")
 require("config.options")
 
 
+
 -- Reference: https://github.com/radleylewis/nvim-lite
 
 
-vim.cmd.colorscheme("oxocarbon")
+vim.cmd.colorscheme("deeper-night")
 
 -- uncomment it if you want transparancy
 -- vim.cmd("hi Normal guibg=NONE")

@@ -9,6 +9,16 @@ return{
     "rebelot/kanagawa.nvim",
   },
   {
+    "2giosangmitom/nightfall.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {}, -- Add custom configuration here
+    config = function(_, opts)
+      require("nightfall").setup(opts)
+      -- vim.cmd("colorscheme nightfall") -- Choose from: nightfall, deeper-night, maron, nord
+    end,
+  },
+  {
     'NTBBloodbath/doom-one.nvim',
     config = function()
           -- Add color to cursor
