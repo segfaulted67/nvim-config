@@ -1,6 +1,7 @@
 -- keymaps
 --  See `:help wincmd` for a list of all window commands
 local map = vim.keymap.set
+local cycle = 0
 
 map({'n', 'i', 'v' }, '<M-x>', ':', { desc = 'Emacs type M-x' })
 map('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
@@ -25,3 +26,13 @@ map('n', '<C-x><C-f>', vim.cmd.Oil)
 -- map('n', '<leader>e', function() require("oil").open_float(".") end)
 -- map("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
+map("n", "<C-l>", function()
+    cycle = (cycle + 1) % 3
+    if cycle == 0 then
+        vim.cmd("normal! zz")
+    elseif cycle == 1 then
+        vim.cmd("normal! zt")
+    else
+        vim.cmd("normal! zb")
+    end
+end)

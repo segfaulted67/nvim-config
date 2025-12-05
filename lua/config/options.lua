@@ -13,7 +13,7 @@ vim.api.nvim_create_autocmd("VimResized", {
 vim.api.nvim_create_autocmd("BufWritePre", {
     pattern = "*",
     callback = function()
-        local save = vim.fn.winsaveview()  -- keep cursor position
+        local save = vim.fn.winsaveview()
         vim.cmd([[%s/\s\+$//e]])
         vim.fn.winrestview(save)
     end,
