@@ -1,3 +1,0 @@
-return{
-    "yilisharcs/cme.nvim",
-}
