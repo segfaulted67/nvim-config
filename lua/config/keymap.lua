@@ -22,9 +22,17 @@ map('n', '<leader>ll', '<cmd>Lazy<CR>')
 -- undo-tree
 map('n', '<leader>ut', vim.cmd.UndotreeToggle)
 
-map('n', '<C-x><C-f>', vim.cmd.Oil)
+map({ 'n', 'i' }, '<C-x><C-f>', vim.cmd.Oil)
 -- map('n', '<leader>e', function() require("oil").open_float(".") end)
 -- map("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
+-- Emacs type keymap
+map({ 'n', 'i' }, "<C-x><C-s>", "<CMD>w<CR>", { desc = "Write the buffer" })
+map({ 'n', 'i' }, "<C-x>0", "<CMD>close<CR>", { desc = "Close the split" })
+map({ 'n', 'i' }, "<C-x>o", "<C-w><C-w>", { desc = "move to other split" })
+map({ 'n', 'i' }, "<C-x>1", "<CMD>only<CR>", { desc = "Close other splits" })
+map({ 'n', 'i' }, '<M-f>', 'w', { desc = "Forward word" })
+map({ 'n', 'i' }, '<M-b>', 'b', { desc = "Backward word" })
 
 map("n", "<C-l>", function()
     cycle = (cycle + 1) % 3
