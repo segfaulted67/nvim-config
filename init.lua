@@ -1,13 +1,14 @@
 require("config.lazy")
 require("config.keymap")
 require("config.options")
+require("config.highlights")
 
 
 
 -- Reference: https://github.com/radleylewis/nvim-lite
 
 
-vim.cmd.colorscheme("deeper-night")
+-- vim.cmd.colorscheme("deeper-night")
 
 -- uncomment it if you want transparancy
 -- vim.cmd("hi Normal guibg=NONE")
@@ -73,6 +74,7 @@ vim.opt.selection = "exclusive"                    -- Selection behavior
 vim.opt.clipboard:append("unnamedplus")            -- Use system clipboard
 vim.opt.modifiable = true                          -- Allow buffer modifications
 vim.opt.encoding = "UTF-8"                         -- Set encoding
+vim.o.splitbelow = true
 
 -- Cursor settings
 vim.opt.guicursor = "n-v-c:block,i-ci-ve:block,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175"
