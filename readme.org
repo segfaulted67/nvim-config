@@ -44,7 +44,7 @@
   - [[https://github.com/nvim-orgmode/orgmode][org-mode.lua]]
   - [[https://github.com/stevearc/quicker.nvim][quicker.lua]]
   - [[https://github.com/tpope/vim-repeat][repaet.lua]]
-  - [[https://github.com/segfaulted67/rln.nvim[][rln.lua]]
+  - [[https://github.com/segfaulted67/rln.nvim][rln.lua]]
   - [[https://github.com/utilyre/sentiment.nvim][sentiment.lua]]
   - [[https://github.com/folke/todo-comments.nvim][todo-comment.lua]]
   - [[https://github.com/nvim-treesitter/nvim-treesitter][tree-sitter.lua]]
