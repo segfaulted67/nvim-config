@@ -54,7 +54,7 @@ return{
       },
       win_options = {
         wrap = true,
-        number = false,
+        number = true,
         winbar = "Directory: %{v:lua.require('oil').get_current_dir()}",
       }
     })
