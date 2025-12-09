@@ -40,6 +40,7 @@
   - [[https://github.com/folke/noice.nvim][noice.nvim]]
   - [[https://github.com/nacro90/numb.nvim][numb.nvim]]
   - [[https://github.com/stevearc/oil.nvim][oil.nvim]]
+  - [[https://github.com/benomahony/oil-git.nvim][oil-git.nvim]]
   - [[https://github.com/nvim-orgmode/org-bullets.nvim][org-bullets.nvim]]
   - [[https://github.com/nvim-orgmode/orgmode][org-mode.nvim]]
   - [[https://github.com/stevearc/quicker.nvim][quicker.nvim]]
@@ -53,6 +54,7 @@
   - [[https://github.com/nvzone/typr][typr.nvim]]
   - [[https://github.com/jiaoshijie/undotree][undo-tree.nvim]]
   - [[https://github.com/folke/which-key.nvim][which-key.nvim]]
+  - [[https://github.com/ywpkwon/yank-path.nvim][yank-path.nvim]]
 
 ** Credits
    - [[https://github.com/rockerBOO/awesome-neovim?tab=readme-ov-file][awesome-neovim]]
