@@ -10,10 +10,10 @@ map('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 map('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
 
-map({'n', 'i'}, '<left>', '<cmd>echo "Use h to move!!"<CR>')
-map({'n', 'i'}, '<right>', '<cmd>echo "Use l to move!!"<CR>')
-map({'n', 'i'}, '<up>', '<cmd>echo "Use k to move!!"<CR>')
-map({'n', 'i'}, '<down>', '<cmd>echo "Use j to move!!"<CR>')
+map({'n', 'i', 'v' }, '<left>', '<cmd>echo "Use h to move!!"<CR>')
+map({'n', 'i', 'v' }, '<right>', '<cmd>echo "Use l to move!!"<CR>')
+map({'n', 'i', 'v' }, '<up>', '<cmd>echo "Use k to move!!"<CR>')
+map({'n', 'i', 'v' }, '<down>', '<cmd>echo "Use j to move!!"<CR>')
 
 map('n', '<localleader>l', function () require('binary-swap').swap_operands()  end)
 map('n', '<localleader>j', function () require('binary-swap').swap_operands_with_operator()  end)
@@ -23,16 +23,14 @@ map('n', '<leader>ll', '<cmd>Lazy<CR>')
 map('n', '<leader>ut', vim.cmd.UndotreeToggle)
 
 map({ 'n', 'i' }, '<C-x><C-f>', vim.cmd.Oil)
--- map('n', '<leader>e', function() require("oil").open_float(".") end)
--- map("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 -- Emacs type keymap
-map({ 'n', 'i' }, "<C-x><C-s>", "<CMD>w<CR>", { desc = "Write the buffer" })
-map({ 'n', 'i' }, "<C-x>0", "<CMD>close<CR>", { desc = "Close the split" })
-map({ 'n', 'i' }, "<C-x>o", "<C-w><C-w>", { desc = "move to other split" })
-map({ 'n', 'i' }, "<C-x>1", "<CMD>only<CR>", { desc = "Close other splits" })
-map({ 'n', 'i' }, '<M-f>', 'w', { desc = "Forward word" })
-map({ 'n', 'i' }, '<M-b>', 'b', { desc = "Backward word" })
+map({ 'n', 'i', 'v' }, "<C-x><C-s>", "<CMD>w<CR>", { desc = "Write the buffer" })
+map({ 'n', 'i', 'v' }, "<C-x>0", "<CMD>close<CR>", { desc = "Close the split" })
+map({ 'n', 'i', 'v' }, "<C-x>o", "<C-w><C-w>", { desc = "move to other split" })
+map({ 'n', 'i', 'v' }, "<C-x>1", "<CMD>only<CR>", { desc = "Close other splits" })
+map({ 'n', 'i', 'v' }, '<M-f>', 'w', { desc = "Forward word" })
+map({ 'n', 'i', 'v' }, '<M-b>', 'b', { desc = "Backward word" })
 
 map("n", "<C-l>", function()
     cycle = (cycle + 1) % 3

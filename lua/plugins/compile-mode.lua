@@ -7,6 +7,11 @@ return {
     "nvim-lua/plenary.nvim",
     -- { "m00qek/baleia.nvim", tag = "v1.3.0" },
   },
+  keys = {
+    { mode = "n", "<Leader>cc", ":silent :botright 15 :Compile<CR>", { noremap = true } },
+    { mode = "n", "<Leader>cr", ":botright 15 :Recompile<CR>",       { noremap = true } },
+    { mode = "n", "<Leader>cq", ":QuickfixErrors<CR>",               { noremap = true } },
+  },
   config = function()
     ---@type CompileModeOpts
     vim.g.compile_mode = {
